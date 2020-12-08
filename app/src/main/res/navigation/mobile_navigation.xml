@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.tmw.incomeexpense.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_expenseFragment"
+            app:destination="@id/expenseFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_incomeFragment"
+            app:destination="@id/incomeFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_incomeHistoryFragment"
+            app:destination="@id/incomeHistoryFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_expenseHistoryFragment"
+            app:destination="@id/expenseHistoryFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_settingFragment2"
+            app:destination="@id/settingFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.tmw.incomeexpense.ui.categories.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_nav_categories_to_incomeCategoriesFragment"
+            app:destination="@id/incomeCategoriesFragment" />
+        <action
+            android:id="@+id/action_nav_categories_to_expenseCategoriesFragment"
+            app:destination="@id/expenseCategoriesFragment" />
+        <action
+            android:id="@+id/action_nav_categories_to_cashCategoriesFragment"
+            app:destination="@id/cashCategoriesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.tmw.incomeexpense.ui.report.ReportFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_nav_report_to_incomeExpenseDetailFragment"
+            app:destination="@id/incomeExpenseDetailFragment" />
+        <action
+            android:id="@+id/action_nav_report_to_expenseDetailFragment"
+            app:destination="@id/expenseDetailFragment" />
+        <action
+            android:id="@+id/action_nav_report_to_incomeByCategoryFragment2"
+            app:destination="@id/incomeByCategoryFragment" />
+        <action
+            android:id="@+id/action_nav_report_to_expenseByCategoryFragment"
+            app:destination="@id/expenseByCategoryFragment" />
+        <action
+            android:id="@+id/action_nav_report_to_incomeByCashFragment"
+            app:destination="@id/incomeByCashFragment" />
+        <action
+            android:id="@+id/action_nav_report_to_expenseByCashFragment"
+            app:destination="@id/expenseByCashFragment" />
+        <action
+            android:id="@+id/action_nav_report_to_incomeByChartFragment"
+            app:destination="@id/incomeByChartFragment" />
+        <action
+            android:id="@+id/action_nav_report_to_expenseByChartFragment"
+            app:destination="@id/expenseByChartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeFragment"
+        android:name="com.tmw.incomeexpense.ui.income.IncomeFragment"
+        android:label="@string/incomeFragment"
+        tools:layout="@layout/fragment_income" >
+        <argument
+            android:name="currentIncomeCategory"
+            app:argType="com.tmw.incomeexpense.model.Income" />
+    </fragment>
+    <fragment
+        android:id="@+id/expenseFragment"
+        android:name="com.tmw.incomeexpense.ui.expense.ExpenseFragment"
+        android:label="@string/expenseFragment"
+        tools:layout="@layout/fragment_expense" />
+    <fragment
+        android:id="@+id/incomeCategoriesFragment"
+        android:name="com.tmw.incomeexpense.ui.income.IncomeCategoriesFragment"
+        android:label="@string/incomeCategoriesFragment"
+        tools:layout="@layout/fragment_income_categories" />
+    <fragment
+        android:id="@+id/expenseCategoriesFragment"
+        android:name="com.tmw.incomeexpense.ui.expense.ExpenseCategoriesFragment"
+        android:label="@string/expenseCategoriesFragment"
+        tools:layout="@layout/fragment_expense_categories" />
+    <fragment
+        android:id="@+id/incomeHistoryFragment"
+        android:name="com.tmw.incomeexpense.ui.home.IncomeHistoryFragment"
+        android:label="@string/incomeHistoryFragment"
+        tools:layout="@layout/fragment_income_history" >
+        <action
+            android:id="@+id/action_incomeHistoryFragment_to_updateIncomeFragment2"
+            app:destination="@id/updateIncomeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/expenseHistoryFragment"
+        android:name="com.tmw.incomeexpense.ui.home.ExpenseHistoryFragment"
+        android:label="@string/expenseHistoryFragment"
+        tools:layout="@layout/fragment_expense_history" >
+        <action
+            android:id="@+id/action_expenseHistoryFragment_to_updateExpenseFragment"
+            app:destination="@id/updateExpenseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateExpenseFragment"
+        android:name="com.tmw.incomeexpense.ui.expense.UpdateExpenseFragment"
+        android:label="@string/updateExpenseFragment"
+        tools:layout="@layout/fragment_update_expense" >
+        <argument
+            android:name="currentExpense"
+            app:argType="com.tmw.incomeexpense.model.Expense" />
+        <action
+            android:id="@+id/action_updateExpenseFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/cashCategoriesFragment"
+        android:name="com.tmw.incomeexpense.ui.cash.CashCategoriesFragment"
+        android:label="@string/cashCategoriesFragment"
+        tools:layout="@layout/fragment_cash_categories" />
+    <fragment
+        android:id="@+id/incomeExpenseDetailFragment"
+        android:name="com.tmw.incomeexpense.ui.report.IncomeDetailFragment"
+        android:label="@string/incomeExpenseDetailFragment"
+        tools:layout="@layout/fragment_income_detail" />
+    <fragment
+        android:id="@+id/updateIncomeFragment2"
+        android:name="com.tmw.incomeexpense.ui.income.UpdateIncomeFragment"
+        android:label="@string/updateIncomeFragment2"
+        tools:layout="@layout/fragment_update_income" >
+        <argument
+            android:name="currentIncome"
+            app:argType="com.tmw.incomeexpense.model.Income" />
+        <action
+            android:id="@+id/action_updateIncomeFragment2_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/expenseDetailFragment"
+        android:name="com.tmw.incomeexpense.ui.report.ExpenseDetailFragment"
+        android:label="@string/expenseDetailFragment"
+        tools:layout="@layout/fragment_expense_detail" />
+    <fragment
+        android:id="@+id/incomeByCategoryFragment"
+        android:name="com.tmw.incomeexpense.ui.report.IncomeByCategoryFragment"
+        android:label="@string/incomeByCategoryFragment"
+        tools:layout="@layout/fragment_income_by_category" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.tmw.incomeexpense.ui.other.ContactFragment"
+        android:label="@string/contactFragment"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.tmw.incomeexpense.ui.other.AboutFragment"
+        android:label="@string/aboutFragment"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/expenseByCategoryFragment"
+        android:name="com.tmw.incomeexpense.ui.report.ExpenseByCategoryFragment"
+        android:label="@string/expenseByCategoryFragment"
+        tools:layout="@layout/fragment_expense_by_category" />
+    <fragment
+        android:id="@+id/incomeByCashFragment"
+        android:name="com.tmw.incomeexpense.ui.report.IncomeByCashFragment"
+        android:label="@string/incomeByCashFragment"
+        tools:layout="@layout/fragment_income_by_cash" />
+    <fragment
+        android:id="@+id/expenseByCashFragment"
+        android:name="com.tmw.incomeexpense.ui.report.ExpenseByCashFragment"
+        android:label="@string/expenseByCashFragment"
+        tools:layout="@layout/fragment_expense_by_cash" />
+    <fragment
+        android:id="@+id/settingFragment2"
+        android:name="com.tmw.incomeexpense.ui.other.SettingFragment"
+        android:label="@string/settingFragment2"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment2_to_languageActivity"
+            app:destination="@id/languageActivity" />
+        <action
+            android:id="@+id/action_settingFragment2_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeByChartFragment"
+        android:name="com.tmw.incomeexpense.ui.report.IncomeByChartFragment"
+        android:label="@string/incomeByChartFragment"
+        tools:layout="@layout/fragment_income_by_chart" />
+    <fragment
+        android:id="@+id/expenseByChartFragment"
+        android:name="com.tmw.incomeexpense.ui.report.ExpenseByChartFragment"
+        android:label="@string/expenseByChartFragment"
+        tools:layout="@layout/fragment_expense_by_chart" />
+    <activity
+        android:id="@+id/languageActivity"
+        android:name="com.tmw.incomeexpense.ui.other.LanguageActivity"
+        android:label="@string/languageActivity"
+        tools:layout="@layout/activity_language" />
+</navigation>

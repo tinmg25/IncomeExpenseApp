@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Income&amp;Expense</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Money Wallet</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_categories">Categories</string>
+    <string name="menu_report">Report</string>
+    <string name="income">Income : </string>
+    <string name="Income">Income</string>
+    <string name="expense">Expense : </string>
+    <string name="Expense">Expense</string>
+    <string name="btn_New">New</string>
+    <string name="balance">Balance :</string>
+    <string name="btn_income">Income Categories</string>
+    <string name="btn_expense">Expense Categories</string>
+    <string name="btn_cash">Cash Account Categories</string>
+    <string name="settingFragment2">Setting</string>
+    <string name="contactFragment">Contact</string>
+    <string name="aboutFragment">About</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_save_income">Save</string>
+    <string name="btn_save_expense">Save</string>
+    <string name="btn_update_income">Update</string>
+    <string name="btn_update_expense">Update</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="date">Date :</string>
+    <string name="category">Category :</string>
+    <string name="cash">Cash :</string>
+    <string name="amount">Amount :</string>
+    <string name="remark">Remark :</string>
+
+    <string name="language">Language</string>
+    <string name="clear_data">Clear</string>
+    <string name="category_name">Category Name</string>
+    <string name="cash_name">Cash</string>
+    <string name="amount_1">Amount</string>
+
+    //report_name
+    <string name="report1">Income(By Category)</string>
+    <string name="report2">Expense(By Category)</string>
+    <string name="report3">Income(Detail)</string>
+    <string name="report4">Expense(Detail)</string>
+    <string name="report5">Income(By Cash)</string>
+    <string name="report6">Expense(By Cash)</string>
+    <string name="report7">Income By Category(By Chart)</string>
+    <string name="report8">Expense By Category(By Chart)</string>
+
+    //language
+    <string name="eng_lang">English</string>
+    <string name="myan_lang">Myanmar(Unicode)</string>
+    <string name="btn_change">Change</string>
+
+    //fragment
+    <string name="incomeFragment">Income</string>
+    <string name="expenseFragment">Expense</string>
+    <string name="incomeCategoriesFragment">Income Categories</string>
+    <string name="expenseCategoriesFragment">Expense Categories</string>
+    <string name="cashCategoriesFragment">Cash Categories</string>
+    <string name="incomeHistoryFragment">Income History</string>
+    <string name="expenseHistoryFragment">Expense History</string>
+    <string name="updateIncomeFragment2">Update Income</string>
+    <string name="updateExpenseFragment">Update Expense</string>
+    <string name="incomeExpenseDetailFragment">Income(Detail)</string>
+    <string name="expenseDetailFragment">Expense(Detail)</string>
+    <string name="incomeByCategoryFragment">Income(By Category)</string>
+    <string name="expenseByCategoryFragment">Expense(By Category)</string>
+    <string name="incomeByCashFragment">Income(By Cash)</string>
+    <string name="expenseByCashFragment">Expense(By Cash)</string>
+    <string name="incomeByChartFragment">Income By Category(By Chart)</string>
+    <string name="expenseByChartFragment">Expense By Category(By Chart)</string>
+    <string name="languageActivity">Language Setting</string>
+
+
+</resources>

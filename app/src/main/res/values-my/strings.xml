@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ဝင်ငွေနှင့်အသုံးစရိတ်</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ပိုက်ဆံအိတ်</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">ပင်မစာမျက်နှာ</string>
+    <string name="menu_categories">အုပ်စုများ</string>
+    <string name="menu_report">အစီရင်ခံစာများ</string>
+    <string name="income">ဝင်ငွေ : </string>
+    <string name="Income">ဝင်ငွေ</string>
+    <string name="expense">အသုံးစရိတ် : </string>
+    <string name="Expense">အသုံးစရိတ်</string>
+    <string name="btn_New">အသစ်</string>
+    <string name="balance">လက်ကျန်ငွေ :</string>
+    <string name="btn_income">ဝင်ငွေအုပ်စု</string>
+    <string name="btn_expense">အသုံးစရိတ်အုပ်စု</string>
+    <string name="btn_cash">ငွေအကောင့်အုပ်စု</string>
+    <string name="btn_update_income">ပြင်မည်</string>
+    <string name="btn_update_expense">ပြင်မည်</string>
+    <string name="settingFragment2">ပြင်ဆင်ရန်</string>
+    <string name="contactFragment">ဆက်သွယ်ရန်</string>
+    <string name="aboutFragment">software အကြောင်း</string>
+    <string name="btn_save">သိမ်းမည်</string>
+    <string name="btn_save_income">သိမ်းမည်</string>
+    <string name="btn_save_expense">သိမ်းမည်</string>
+    <string name="btn_cancel">ပယ်ဖျက်မည်</string>
+    <string name="date">နေ့စွဲ :</string>
+    <string name="category">အုပ်စု :</string>
+    <string name="cash">ငွေအကောင့် :</string>
+    <string name="amount">ပမာဏ :</string>
+    <string name="remark">မှတ်ချက် :</string>
+
+    <string name="language">ဘာသာစကား</string>
+    <string name="clear_data">စာရင္းအားလံုးဖ်က္မည္</string>
+    <string name="category_name">အုပ်စုအမည်</string>
+    <string name="cash_name">ငွေအကောင့်</string>
+    <string name="amount_1">ပမာဏ</string>
+
+    //report_name
+    <string name="report1">ဝင်ငွေ(အုပ်စုလိုက်ပြသခြင်း)</string>
+    <string name="report2">ထွက်ငွေ(အုပ်စုလိုက်ပြသခြင်း)</string>
+    <string name="report3">ဝင်ငွေ(အသေးစိတ်)</string>
+    <string name="report4">ထွက်ငွေ(အသေးစိတ်)</string>
+    <string name="report5">ဝင်ငွေ(ငွေသားအလိုက်ပြသခြင်း)</string>
+    <string name="report6">ထွက်ငွေ(ငွေသားအလိုက်ပြသခြင်း)</string>
+    <string name="report7">ဝင်ငွေ(အုပ်စုလိုက်ကိုပုံဖြင့်ပြသခြင်း)</string>
+    <string name="report8">ထွက်ငွေ(အုပ်စုလိုက်ကိုပုံဖြင့်ပြသခြင်း)</string>
+
+    //language
+    <string name="eng_lang">English</string>
+    <string name="myan_lang">မြန်မာ(ယူနီကုဒ်)</string>
+    <string name="btn_change">ပြောင်းလဲမည်</string>
+
+    //fragment
+    <string name="incomeFragment">ဝင်ငွေစာရင်းထည့်သွင်းခြင်း</string>
+    <string name="expenseFragment">ထွက်ငွေစာရင်းထည့်သွင့်ခြင်း</string>
+    <string name="incomeCategoriesFragment">ဝင်ငွေအုပ်စုများ</string>
+    <string name="expenseCategoriesFragment">ထွက်ငွေအုပ်စုများ</string>
+    <string name="cashCategoriesFragment">ငွေအကောင့်အုပ်စုများ</string>
+    <string name="incomeHistoryFragment">ဝင်ငွေစာရင်းများ</string>
+    <string name="expenseHistoryFragment">ထွက်ငွေစာရင်းများ</string>
+    <string name="updateIncomeFragment2">ဝင်ငွေစာရင်းပြင်ဆင်ခြင်း</string>
+    <string name="updateExpenseFragment">ထွက်ငွေစာရင်းပြင်ဆင်ခြင်း</string>
+    <string name="incomeExpenseDetailFragment">ဝင်ငွေ(အသေးစိတ်)</string>
+    <string name="expenseDetailFragment">ထွက်ငွေ(အသေးစိတ်)</string>
+    <string name="incomeByCategoryFragment">ဝင်ငွေ(အုပ်စုလိုက်ပြသခြင်း)</string>
+    <string name="expenseByCategoryFragment">ထွက်ငွေ(အုပ်စုလိုက်ပြသခြင်း)</string>
+    <string name="incomeByCashFragment">ဝင်ငွေ(ငွေသားအလိုက်ပြသခြင်း)</string>
+    <string name="expenseByCashFragment">ထွက်ငွေ(ငွေသားအလိုက်ပြသခြင်း)</string>
+    <string name="incomeByChartFragment">ဝင်ငွေ(အုပ်စုလိုက်ကိုပုံဖြင့်ပြသခြင်း)</string>
+    <string name="expenseByChartFragment">ထွက်ငွေ(အုပ်စုလိုက်ကိုပုံဖြင့်ပြသခြင်း)</string>
+    <string name="languageActivity"></string>
+
+</resources>
